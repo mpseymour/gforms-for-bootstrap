@@ -1,5 +1,8 @@
 // Gravity Forms Base
 // https://roots.io/guides/style-gravity-forms-with-bootstrap-4/
+
+// General form and inputs
+// ---------------
 .gform_wrapper form {
 	margin-bottom: 0;
 }
@@ -8,7 +11,7 @@
 	@extend .list-unstyled;
 }
 
-.gform_wrapper li {
+.gform_wrapper .gfield {
 	@extend .form-group;
 }
 
@@ -50,11 +53,56 @@
 	@extend .form-check-label;
 }
 
+@include media-breakpoint-up(md) {
+	.gf_list_2col .gfield_radio,
+	.gf_list_2col .gfield_checkbox,
+	.gf_list_3col .gfield_radio,
+	.gf_list_3col .gfield_checkbox,
+	.gf_list_4col .gfield_radio,
+	.gf_list_4col .gfield_checkbox,
+	.gf_list_5col .gfield_radio,
+	.gf_list_5col .gfield_checkbox {
+		column-gap: 1rem;
+	}
+
+	.gf_list_2col .gfield_radio,
+	.gf_list_2col .gfield_checkbox {
+		columns: 2;
+	}
+
+	.gf_list_3col .gfield_radio,
+	.gf_list_3col .gfield_checkbox {
+		columns: 3;
+	}
+	.gf_list_4col .gfield_radio,
+	.gf_list_4col .gfield_checkbox {
+		columns: 4;
+	}
+	.gf_list_5col .gfield_radio,
+	.gf_list_5col .gfield_checkbox {
+		columns: 5;
+	}
+}
+
+.gfield_description {
+	@extend .form-text;
+	@extend .text-muted;
+}
+
+.screen-reader-text {
+	@extend .sr-only;
+}
+
+
+// Buttons
+// ---------------
 .gform_wrapper .button {
 	@extend .btn;
 	@extend .btn-primary;
 }
 
+// Validation
+// ---------------
 .gform_wrapper .gfield_error {
 	.gfield_label {
 		@extend .alert-danger;
@@ -85,6 +133,3 @@
 	}
 }
 
-.screen-reader-text {
-	@extend .sr-only;
-}
