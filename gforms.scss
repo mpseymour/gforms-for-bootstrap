@@ -84,3 +84,7 @@
 		@extend .text-center;
 	}
 }
+
+.screen-reader-text {
+	@extend .sr-only;
+}
