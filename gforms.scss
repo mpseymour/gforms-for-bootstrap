@@ -35,6 +35,21 @@
 	@extend .form-control;
 }
 
+.gform_wrapper .gfield_checkbox,
+.gform_wrapper .gfield_radio {
+	@extend .form-check;
+}
+
+.gform_wrapper input[type="checkbox"],
+.gform_wrapper input[type="radio"] {
+	@extend .form-check-input;
+}
+
+.gform_wrapper .gfield_checkbox label,
+.gform_wrapper .gfield_radio label {
+	@extend .form-check-label;
+}
+
 .gform_wrapper .button {
 	@extend .btn;
 	@extend .btn-primary;
