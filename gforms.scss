@@ -75,3 +75,12 @@
 .validation_message {
 	display: none;
 }
+
+.gform_confirmation_wrapper {
+
+	.gform_confirmation_message {
+		@extend .alert;
+		@extend .alert-success;
+		@extend .text-center;
+	}
+}
