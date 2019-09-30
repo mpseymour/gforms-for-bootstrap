@@ -87,6 +87,12 @@
 .gfield_description {
 	@extend .form-text;
 	@extend .text-muted;
+	@extend .mt-3;
+}
+
+.gform_description {
+	@extend .d-block;
+	@extend .mb-3;
 }
 
 .screen-reader-text {
