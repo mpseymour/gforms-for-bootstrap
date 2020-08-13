@@ -95,10 +95,10 @@
 	@extend .mb-3;
 }
 
+.gform_wrapper .hidden_label .gfield_label,
 .screen-reader-text {
 	@extend .sr-only;
 }
-
 
 // Buttons
 // ---------------
